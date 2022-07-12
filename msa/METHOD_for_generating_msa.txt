@@ -1,0 +1,16 @@
+The resulting alignment of 15 sequences is created using mafft v7.490 (2021/Oct/30) https://doi.org/10.1093/molbev/mst010 in a single step:
+
+Each sequence is individually aligned to the reference GenBank: MN908947.3. The alignments are created with the command:
+
+	mafft --thread -1 input.fasta > output.fasta
+
+
+Default parameters:
+--fft, Use FFT approximation (FFT-NS-2) in group-to-group alignment
+--6merpair, distance is calculated based on the number of shared 6mers
+--retree 2, guide tree is built 2 times in the progressive stage
+--memsave(Using the Myers-Miller 1988 algorithm) is automatically turned on when the alignment length exceeds 10k (aa/nt)
+--op 1.53, gap opening penalty at group-to-group alignment
+--ep .123, offset value, which works like gap extension penalty, for group-to-group alignment
+--bl 62, BLOSUM number matrix (Henikoff and Henikoff 1992) is used
+--inputorder, output order same as input order
