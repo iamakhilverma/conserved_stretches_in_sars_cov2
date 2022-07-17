@@ -1,0 +1,124 @@
+-------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
+stats.chi2_contingency returns: 
+	- (The test statistic, The p-value of the test, Degrees of freedom, The expected frequencies, based on the marginal sums of the table)
+stats.fisher_exact returns:
+	- (prior odds ratio(and not a posterior estimate), p-value(the probability of obtaining a distribution at least as extreme as the one that was actually observed, assuming that the null hypothesis is true))
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Results:
+
+For Seed A, k='zap_motifs', [obs1b=1, obs2b=10], and rand_={'mean_zap_motifs': 3.6163, 'iterations_with_zap_motifs_lt1': 2101, 'median_zap_motifs': 3.0, 'stretches_with_zap_motifs_geq1': 75271, 'stretches_with_zap_motifs_eq0': 34729, 'mean_gc_content': 38.0304128440367, 'median_gc_content': 37.99694189602447, 'stretches_with_gc_geq_ref': 51118, 'stretches_with_gc_lt_ref': 58882, 'stretches_with_cpgs_geq_ref': 43676, 'stretches_with_cpgs_lt_ref': 66324}:
+
+	- stats.chi2_contingency(obs, correction=False)=(17.923626163783073, 2.2994877109409954e-05, 1, array([[7.52644736e+00, 3.47355264e+00],
+       [7.52644736e+04, 3.47355264e+04]]))
+	- stats.chi2_contingency(obs, correction=True)=(15.282518598210515, 9.256924120898787e-05, 1, array([[7.52644736e+00, 3.47355264e+00],
+       [7.52644736e+04, 3.47355264e+04]]))
+	- stats.fisher_exact(two-sided): res_fisher=(0.046138619122902576, 7.72504053008354e-05)
+
+
+For Seed A, k='gc_content', [obs1b=6, obs2b=5], and rand_={'mean_zap_motifs': 3.6163, 'iterations_with_zap_motifs_lt1': 2101, 'median_zap_motifs': 3.0, 'stretches_with_zap_motifs_geq1': 75271, 'stretches_with_zap_motifs_eq0': 34729, 'mean_gc_content': 38.0304128440367, 'median_gc_content': 37.99694189602447, 'stretches_with_gc_geq_ref': 51118, 'stretches_with_gc_lt_ref': 58882, 'stretches_with_cpgs_geq_ref': 43676, 'stretches_with_cpgs_lt_ref': 66324}:
+
+	- stats.chi2_contingency(obs, correction=False)=(0.2882792570950756, 0.5913253386504367, 1, array([[5.11188881e+00, 5.88811119e+00],
+       [5.11188881e+04, 5.88811119e+04]]))
+	- stats.chi2_contingency(obs, correction=True)=(0.055054273688906405, 0.8144908996138371, 1, array([[5.11188881e+00, 5.88811119e+00],
+       [5.11188881e+04, 5.88811119e+04]]))
+	- stats.fisher_exact(two-sided): res_fisher=(1.3822606518251888, 0.7644370417953006)
+
+
+For Seed A, k='cpg_o_by_e', [obs1b=6, obs2b=5], and rand_={'mean_zap_motifs': 3.6163, 'iterations_with_zap_motifs_lt1': 2101, 'median_zap_motifs': 3.0, 'stretches_with_zap_motifs_geq1': 75271, 'stretches_with_zap_motifs_eq0': 34729, 'mean_gc_content': 38.0304128440367, 'median_gc_content': 37.99694189602447, 'stretches_with_gc_geq_ref': 51118, 'stretches_with_gc_lt_ref': 58882, 'stretches_with_cpgs_geq_ref': 43676, 'stretches_with_cpgs_lt_ref': 66324}:
+
+	- stats.chi2_contingency(obs, correction=False)=(1.0117735466188624, 0.31447832676101084, 1, array([[4.36776322e+00, 6.63223678e+00],
+       [4.36776322e+04, 6.63223678e+04]]))
+	- stats.chi2_contingency(obs, correction=True)=(0.48684590008974477, 0.4853376598922956, 1, array([[4.36776322e+00, 6.63223678e+00],
+       [4.36776322e+04, 6.63223678e+04]]))
+	- stats.fisher_exact(two-sided): res_fisher=(1.8222547852367432, 0.36291371575490305)
+
+-----------------------------------------------------
+
+For Seed B, k='zap_motifs', [obs1b=1, obs2b=10], and rand_={'mean_zap_motifs': 3.61815, 'iterations_with_zap_motifs_lt1': 2096, 'median_zap_motifs': 3.0, 'stretches_with_zap_motifs_geq1': 75472, 'stretches_with_zap_motifs_eq0': 34528, 'mean_gc_content': 38.01757262996942, 'median_gc_content': 37.99694189602447, 'stretches_with_gc_geq_ref': 50798, 'stretches_with_gc_lt_ref': 59202, 'stretches_with_cpgs_geq_ref': 43602, 'stretches_with_cpgs_lt_ref': 66398}:
+
+	- stats.chi2_contingency(obs, correction=False)=(18.090831534756493, 2.1061313463433813e-05, 1, array([[7.54654535e+00, 3.45345465e+00],
+       [7.54654535e+04, 3.45345465e+04]]))
+	- stats.chi2_contingency(obs, correction=True)=(15.432944590210615, 8.548493435468551e-05, 1, array([[7.54654535e+00, 3.45345465e+00],
+       [7.54654535e+04, 3.45345465e+04]]))
+	- stats.fisher_exact(two-sided): res_fisher=(0.04574941700233199, 7.306457726927591e-05)
+
+
+For Seed B, k='gc_content', [obs1b=6, obs2b=5], and rand_={'mean_zap_motifs': 3.61815, 'iterations_with_zap_motifs_lt1': 2096, 'median_zap_motifs': 3.0, 'stretches_with_zap_motifs_geq1': 75472, 'stretches_with_zap_motifs_eq0': 34528, 'mean_gc_content': 38.01757262996942, 'median_gc_content': 37.99694189602447, 'stretches_with_gc_geq_ref': 50798, 'stretches_with_gc_lt_ref': 59202, 'stretches_with_cpgs_geq_ref': 43602, 'stretches_with_cpgs_lt_ref': 66398}:
+
+	- stats.chi2_contingency(obs, correction=False)=(0.30969172910217324, 0.577869414292421, 1, array([[5.07989201e+00, 5.92010799e+00],
+       [5.07989201e+04, 5.92010799e+04]]))
+	- stats.chi2_contingency(obs, correction=True)=(0.06456154053659624, 0.7994263138906512, 1, array([[5.07989201e+00, 5.92010799e+00],
+       [5.07989201e+04, 5.92010799e+04]]))
+	- stats.fisher_exact(two-sided): res_fisher=(1.3985275010827198, 0.7641726197331191)
+
+
+For Seed B, k='cpg_o_by_e', [obs1b=6, obs2b=5], and rand_={'mean_zap_motifs': 3.61815, 'iterations_with_zap_motifs_lt1': 2096, 'median_zap_motifs': 3.0, 'stretches_with_zap_motifs_geq1': 75472, 'stretches_with_zap_motifs_eq0': 34528, 'mean_gc_content': 38.01757262996942, 'median_gc_content': 37.99694189602447, 'stretches_with_gc_geq_ref': 50798, 'stretches_with_gc_lt_ref': 59202, 'stretches_with_cpgs_geq_ref': 43602, 'stretches_with_cpgs_lt_ref': 66398}:
+
+	- stats.chi2_contingency(obs, correction=False)=(1.0215602998260704, 0.3121491873635271, 1, array([[4.36036396e+00, 6.63963604e+00],
+       [4.36036396e+04, 6.63963604e+04]]))
+	- stats.chi2_contingency(obs, correction=True)=(0.4935162355147335, 0.48236297106843695, 1, array([[4.36036396e+00, 6.63963604e+00],
+       [4.36036396e+04, 6.63963604e+04]]))
+	- stats.fisher_exact(two-sided): res_fisher=(1.827384064951149, 0.3623686949752)
+
+-----------------------------------------------------
+
+For Seed C, k='zap_motifs', [obs1b=1, obs2b=10], and rand_={'mean_zap_motifs': 3.6047333333333333, 'iterations_with_zap_motifs_lt1': 2126, 'median_zap_motifs': 3.0, 'stretches_with_zap_motifs_geq1': 74568, 'stretches_with_zap_motifs_eq0': 35432, 'mean_gc_content': 38.013037716615706, 'median_gc_content': 37.99694189602447, 'stretches_with_gc_geq_ref': 50705, 'stretches_with_gc_lt_ref': 59295, 'stretches_with_cpgs_geq_ref': 43528, 'stretches_with_cpgs_lt_ref': 66472}:
+
+	- stats.chi2_contingency(obs, correction=False)=(17.35378612491587, 3.1027951928103956e-05, 1, array([[7.45615438e+00, 3.54384562e+00],
+       [7.45615438e+04, 3.54384562e+04]]))
+	- stats.chi2_contingency(obs, correction=True)=(14.769925989316453, 0.00012145718625437125, 1, array([[7.45615438e+00, 3.54384562e+00],
+       [7.45615438e+04, 3.54384562e+04]]))
+	- stats.fisher_exact(two-sided): res_fisher=(0.047516360905482245, 9.361977821025981e-05)
+
+
+For Seed C, k='gc_content', [obs1b=6, obs2b=5], and rand_={'mean_zap_motifs': 3.6047333333333333, 'iterations_with_zap_motifs_lt1': 2126, 'median_zap_motifs': 3.0, 'stretches_with_zap_motifs_geq1': 74568, 'stretches_with_zap_motifs_eq0': 35432, 'mean_gc_content': 38.013037716615706, 'median_gc_content': 37.99694189602447, 'stretches_with_gc_geq_ref': 50705, 'stretches_with_gc_lt_ref': 59295, 'stretches_with_cpgs_geq_ref': 43528, 'stretches_with_cpgs_lt_ref': 66472}:
+
+	- stats.chi2_contingency(obs, correction=False)=(0.3160661836334872, 0.5739813708690348, 1, array([[5.07059294e+00, 5.92940706e+00],
+       [5.07059294e+04, 5.92940706e+04]]))
+	- stats.chi2_contingency(obs, correction=True)=(0.06746902877615715, 0.7950581565518617, 1, array([[5.07059294e+00, 5.92940706e+00],
+       [5.07059294e+04, 5.92940706e+04]]))
+	- stats.fisher_exact(two-sided): res_fisher=(1.4032935607928212, 0.7641122418039175)
+
+
+For Seed C, k='cpg_o_by_e', [obs1b=6, obs2b=5], and rand_={'mean_zap_motifs': 3.6047333333333333, 'iterations_with_zap_motifs_lt1': 2126, 'median_zap_motifs': 3.0, 'stretches_with_zap_motifs_geq1': 74568, 'stretches_with_zap_motifs_eq0': 35432, 'mean_gc_content': 38.013037716615706, 'median_gc_content': 37.99694189602447, 'stretches_with_gc_geq_ref': 50705, 'stretches_with_gc_lt_ref': 59295, 'stretches_with_cpgs_geq_ref': 43528, 'stretches_with_cpgs_lt_ref': 66472}:
+
+	- stats.chi2_contingency(obs, correction=False)=(1.031403960013378, 0.3098291458262081, 1, array([[4.3529647e+00, 6.6470353e+00],
+       [4.3529647e+04, 6.6470353e+04]]))
+	- stats.chi2_contingency(obs, correction=True)=(0.5002378466766, 0.47939563306745714, 1, array([[4.3529647e+00, 6.6470353e+00],
+       [4.3529647e+04, 6.6470353e+04]]))
+	- stats.fisher_exact(two-sided): res_fisher=(1.8325307847822092, 0.36183302373841053)
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Barnard's exact results are for input with one digit lesser than the original values:
+
+For ZAP-binding motifs:
+	- For Seed A, stats.barnard_exact(pooled=False, two-sided): res_barnard=BarnardExactResult(statistic=-2.9884641485117607, pvalue=0.011058035083024772)
+
+	- For Seed B, stats.barnard_exact(pooled=False, two-sided): res_barnard=BarnardExactResult(statistic=-2.9902268017639435, pvalue=0.003259920853116584)
+
+	- For Seed C, stats.barnard_exact(pooled=False, two-sided): res_barnard=BarnardExactResult(statistic=-2.982103551198442, pvalue=0.009995544834319638)
+
+
+
+For GC content:
+	- For Seed A, stats.barnard_exact(pooled=False, two-sided): res_barnard=BarnardExactResult(statistic=0.5308530802271595, pvalue=0.5960334303705418)
+
+	- For Seed B, stats.barnard_exact(pooled=False, two-sided): res_barnard=BarnardExactResult(statistic=0.5494590597468815, pvalue=0.5835276309660643)
+
+	- For Seed C, stats.barnard_exact(pooled=False, two-sided): res_barnard=BarnardExactResult(statistic=0.5546825142330339, pvalue=0.580466733948967)
+
+
+
+For CpG O/Es:
+	- For Seed A, stats.barnard_exact(pooled=False, two-sided): res_barnard=BarnardExactResult(statistic=0.947101798292824, pvalue=0.3447857816507817)
+
+	- For Seed B, stats.barnard_exact(pooled=False, two-sided): res_barnard=BarnardExactResult(statistic=0.9508312374687979, pvalue=0.3428309709383631)
+
+	- For Seed C, stats.barnard_exact(pooled=False, two-sided): res_barnard=BarnardExactResult(statistic=0.9550886705943413, pvalue=0.3403553993407846)
