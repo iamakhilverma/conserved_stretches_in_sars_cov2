@@ -27,11 +27,13 @@ seqArray = [i for i in seqArray[-1]] # list(seqArray[-1])
 df_mapping = pd.DataFrame(seqArray, columns=["aligned_seq"])
 df_mapping["aligned_number"] = df_mapping.apply(lambda x: x.index + 1)
 
-count = [0]
 
 for row in df_mapping.itertuples():
     if row.aligned_seq == "-":
-        count.append(count[-1])
+        if row.Index == 0:
+            count = [0]
+        else:
+            count.append(count[-1])
     else:
         if row.Index == 0:
             count = [1]
